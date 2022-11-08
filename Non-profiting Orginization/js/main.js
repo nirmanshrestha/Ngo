@@ -45,3 +45,21 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
   }
+
+    <script>
+      (function(d,t) {
+        var BASE_URL="https://omni.diyochat.com";
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=BASE_URL+"/packs/js/sdk.js";
+        g.defer = true;
+        g.async = true;
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+          window.diyochatSDK.run({
+            websiteToken: 'AHA2XEgL9Njf1yfG4exhfWmP',
+            baseUrl: BASE_URL
+          })
+        }
+      })(document,"script");
+    </script>
+    
